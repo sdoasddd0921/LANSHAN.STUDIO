@@ -1,0 +1,417 @@
+* { padding: 0; margin: 0; list-style: none;}
+body { width: 1920px; font-family: "微软雅黑"; }
+h1 {
+    font-weight: 500;
+}
+/*----------------------nav----------------------*/
+#nav {
+    width: 100%;
+    height: 60px;
+    background: #0A0B08;
+}
+#nav img {
+    position: absolute;
+    left: 460px;
+    top: 6px;
+}
+#nav ul {
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    width: 620px;
+    color: #01A6DE;
+    left: 860px;
+    top: 15px;
+}
+#nav ul li {
+    width: 90px;
+    float: left;
+    padding: 0 8px;
+}
+#nav ul li:first-child {
+    padding: 0;
+}
+#nav>ul>li:first-child:before {
+    content: "";
+    position: absolute;
+    background: #F29400;
+    top: 40px;right: 530px;bottom: -24px;left: 0;
+}
+#nav ul li:first-child:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #F29400;
+    bottom: -19px;left: 41px;
+}
+
+/*--------------------banner--------------------*/
+#banner {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+    color: #fff;
+    background: url("pics/banner_bg.png");
+}
+#ipnone_out {
+    position: absolute;
+    top: 76px;
+    left: 1112px;
+}
+#iphone_in {
+    position: absolute;
+    left: 1172px;
+    top: 145px;
+}
+#rb {
+    position: absolute;
+    top: 110px;
+    left: 350px;
+}
+#bigword {
+    position: absolute;
+    font-size: 40px;
+    top: 136px;
+    left: 460px;
+}
+#smallword {
+    position: absolute;
+    font-size: 18px;
+    top: 202px;
+    left:460px;
+}
+#btn {
+    position: absolute;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    width: 121px;
+    height: 40px;
+    background: #F29400;
+    left: 460px; top: 246px;
+    border-radius: 10px;
+    -webkit-box-shadow:
+    0 0 0,
+    0 0 0,
+    inset 0 1px 1px rgba(255,255,255,.4),
+    0 1px 1px rgba(0,0,0,.4);
+}
+
+/*------------------smart_home------------------*/
+#smart_home {
+    width: 100%;
+    height: 540px;
+    background: #fff;
+    position: relative;
+}
+#smart_home .words h1 { color: #000; }
+#smart_home>div:nth-child(2) {
+    width: 1166.2px;
+    margin: 121px auto 0 auto;
+    position: relative;
+}
+.items {
+    width: 122px;
+    margin: 0 83px;
+    position: relative;
+    display: inline-block;
+}
+.hexagon { 
+    width: 104px; 
+    height: 60px; 
+    background: #01A6DE; 
+    margin: 0 auto;
+    position: relative; 
+} 
+.hexagon:before { 
+    content: ""; 
+    position: absolute; 
+    top: -30px; 
+    left: 0; 
+    width: 0; 
+    height: 0; 
+    border-left: 52px solid transparent; 
+    border-right: 52px solid transparent; 
+    border-bottom: 30px solid #01A6DE; 
+} 
+.hexagon:after { 
+    content: ""; 
+    position: absolute; 
+    bottom: -30px; 
+    left: 0; 
+    width: 0; 
+    height: 0; 
+    border-left: 52px solid transparent; 
+    border-right: 52px solid transparent; 
+    border-top: 30px solid #01A6DE; 
+} 
+.hexagon_bg {
+    position: absolute;
+    left: 0; top: -25px;
+}
+.settings {
+    position: absolute;
+    left:37px; top: 5px;
+}
+.items>span {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    position: absolute;
+    margin-top: 63px;
+    text-align: center;
+}
+
+
+
+/*--------------------case--------------------*/
+#case {
+    width: 100%;
+    height: 548px;
+    background: url("pics/case_bg.png");
+}
+#casebox {
+    width: 100%;
+    height: 540px;
+    background: rgba(0, 0, 0, .9);
+    position: relative;
+    text-align: center;
+}
+.words {
+    text-align: center;
+}
+.words>h1 {
+    color: #fff;
+    padding-top: 35px;
+}
+.words>span {
+    color: #999;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+.words p {
+    color: #999;
+    font-size: 12px;
+    line-height: 20px;
+}
+.words>div {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #F29706;
+    border-radius: 15px;
+    margin: 7px auto;
+}
+.words>div>img {
+    margin-top: 12px;
+}
+.words :nth-child(4) {
+    margin-top: 23px;
+}
+#pics {
+    width: 1012px;
+    height: 306px;
+    margin: 30px auto 0 auto;
+    font-size: 0;
+}
+#pics>img {
+    margin: 6.5px;
+}
+
+/*---------------fcreate---------------*/
+
+#fcreate {
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+}
+#fcreate .words>h1 { color: #000; }
+#fcreate .words :nth-child(4) {
+    margin-top: 15px;
+}
+#fcreate>img {
+    display: block;
+    margin: -16px auto 0 auto;
+}
+
+/*--------------------news--------------------*/
+
+
+#news {
+    width: 100%;
+    height: 540px;
+    background: url("pics/news_bg.png");
+    overflow: hidden;
+}
+#blue {
+    width: 100%;
+    height: 100%;
+    background: url("pics/blue.png");
+    background-position: 0 -184px;
+}
+#news p { color: #fff; }
+
+#tree {
+    width: 0;
+    height: 300px;
+    border: 1px solid #fff;
+    border-top: 0;
+    margin: 50px auto 0 auto;
+}
+.item_circle {
+    width: 31px;
+    height: 31px;
+    border: 2px solid #fff;
+    background: #01A6DE;
+    border-radius: 50%;
+    margin: 0 0 30px -17.5px;
+    text-align: center;
+    position: relative;
+}
+.item_circle img {
+    vertical-align:middle;
+    margin-top: 5px;
+    margin-left: 1px;
+}
+.content {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    top: 0;
+}
+.content>span {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+.content>p {
+    color: #ddd;
+    font-size: 12px;
+    line-height: 18px;
+}
+.content :nth-child(2) {
+    margin-top: 6px;
+}
+._r {
+    text-align: left;
+    left: 56px;
+}
+._l {
+    text-align: right;
+    right: 56px;
+}
+
+/*------------------joined------------------*/
+#joined {
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+    background: url("pics/news_bg.png");
+}
+#joined>div {
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    background: rgba(255, 255, 255, .9);
+}
+#joined>div>.words>h1 { color: #000; }
+#joined>div>img { margin-top: -29px; }
+
+/*------------------contact------------------*/
+#contact {
+    width: 100%;
+    height: 540px;
+    background: url("pics/contact_bg.png");
+}
+#contact>div {
+    width: inherit;
+    height: inherit;
+    background: url("pics/contact_bg2.png");
+}
+#contact>div>.words>p { color: #fff; }
+
+
+#info {
+    width: 1104px;
+    height: 310px;
+    margin: 28px auto;
+}
+#info>div {
+    width: 456px;
+    height: 301px;
+    margin: 0 48px;
+    float: left;
+}
+
+#info>div>form>input, #info>div>form>textarea {
+    display: block;
+    border: none;
+}
+
+.name, .phone, .email {
+    width: 420px;
+    height: 38px;
+    margin-top: 1px;
+    color: #e5e5e5;
+    padding: 2px 18px;
+    background: #5BB3E2;
+}
+.phone {
+    background: #fff;
+    color: #bbb;
+}
+#info textarea {
+    width: 420px;
+    height: 99px;
+    margin-top: 1px;
+    padding: 15px 18px;
+    background: #5BB3E2;
+    color: #e5e5e5;
+    resize: none;
+}
+.sub {
+    width: 456px;
+    height: 42px;
+    font-size: 16px;
+    margin-top: 1px;
+    color: #fff;
+    background: #F29400;
+}
+#info ul li {
+    width: 42px;
+    height: 33.5px;
+    background: #5BB3E2;
+    margin-top: 1px;
+    padding-top: 8.5px;
+    position: relative;
+}
+#info ul li span {
+    width: 400px;
+    position: absolute;
+    top: 13px; left: 65px;
+    font-size: 12px;
+    color: #fff;
+}
+#info ul li img {
+    display: block;
+    margin: auto;
+}
+
+/*------------------bottom------------------*/
+#bottom {
+    width: 100%;
+    height: 40px;
+    background: #000;
+}
+#bottom p {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
