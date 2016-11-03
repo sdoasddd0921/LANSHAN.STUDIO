@@ -1,0 +1,66 @@
+*{padding: 0;margin: 0;list-style: none;}
+#box {
+	width: 400px;
+	height: 300px;
+	margin: 100px auto;
+	position: relative;
+	border: 5px solid silver;
+	border-radius: 7px;
+	overflow: hidden;
+}
+#box #imgs {
+	width: 2000px;
+	height: 300px;
+	position: absolute;
+}
+#box #imgs li {float: left;}
+#box .btn {
+	width: 30px;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 50%;
+	margin-top:-25px; 
+	font-family: "宋体";
+	font-size: 40px;
+	line-height: 50px;
+	cursor: pointer;
+	text-align: center;
+	display: none;
+}
+#box:hover .btn{display: block;}
+#box .btn_l{left: 0;}
+#box .btn_r{right: 0;}
+#box #bar {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	font-size: 0;
+}
+#box #bar li {
+	width: 10px;
+	height: 10px;
+	background: #888;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 3px;
+	cursor: pointer;
+}
+#box #bar li.on {background: #f60;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
