@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NavDemo</title>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script>
+		$(function(){
+			function show(elt){
+				$(elt).prepend('<span></span>');
+				$(elt).each(
+					function(){
+						var text=$(this).find('a').html();
+						$(this).find('span').html(text);
+					}
+				);
+				$(elt).hover(
+					function(){
+						$(this).find('span').stop().animate({marginTop:'-40'},400);
+					},
+					function(){
+						$(this).find('span').stop().animate({marginTop:'0'},200);
+					}
+				);
+			}
+		show('#menu li');
+		show('button');
+		});
+	</script>
+	<style>
+	*{margin: 0;padding: 0;}
+	body {font-size: 12px;}
+	#menu {
+		width: 600px;
+		height: 40px;
+		margin: 30px auto;
+		font-size: 1.1em;
+		font-family: 微软雅黑;
+	}
+	#menu ul {
+		list-style: none;
+	}
+	#menu ul li {
+		height: 40px;
+		overflow: hidden;
+		float: left;
+		text-align: center;
+	}
+	#menu ul li a, #menu ul li span {
+		text-decoration: none;
+		float: left;
+		clear: both;
+		color: black;
+		width: 100px;
+		height: 20px;
+		line-height: 20px;
+		padding: 10px 0;
+	}
+	#menu ul li a {
+		background:-webkit-gradient(linear, left top, left bottom, from(#C5C5C5), to(#fff));
+		/*background: url(bg.gif) repeat-x;*/
+		/*background-position: left bottom;*/
+	}
+	#menu ul li span {
+		color: #fff;
+		background: -webkit-gradient(linear, left top, left bottom, from(#911F1F), to(#440202));
+		/*background: url(bg.gif) repeat-x;*/
+		/*background-position: left top;*/
+	}
+	</style>
+</head>
+<body>
+<div id="menu">
+	<ul>
+		<li><a>网页特效</a></li>
+	    <li><a>导航菜单</a></li>
+	    <li><a>焦点幻灯</a></li>
+	    <li><a>qq在线客</a></li>
+	    <li><a>选项卡代</a></li>
+	    <li><a>jquery弹</a></li>
+	</ul>
+</div>
+</body>
+</html>
